@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styleTemp.css" />
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="result1">
+            <label for="result">Temperature Converter</label>
+
+        </div>
+        <div class="container">
+            <label for="unit">Unit</label>
+            <select id="unit" onchange="convertTemperature()">
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+        </select>
+        </div>
+        <div class="container">
+            <label for="celsius">Celsius </label>
+            <input type="number" id="celsius" />
+        </div>
+        <div class="container">
+            <label for="fahrenheit">Fahrenheit</label>
+            <input type="number" id="fahrenheit" />
+        </div>
+        <button onclick="convertTemperature()">Convert</button>
+        <div class="result">
+            <label for="result">Converted Temperature in</label>
+            <span id="result"></span>
+        </div>
+    </div>
+    <script src="scriptTemp.js"></script>
+</body>
+
+</html>
